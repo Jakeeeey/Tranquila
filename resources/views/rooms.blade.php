@@ -1,5 +1,5 @@
 <x-layout>
-    <h1>Home</h1>
+    <h1>Our Rooms</h1>
 
 
 </x-layout>
