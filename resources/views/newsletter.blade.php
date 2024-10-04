@@ -1,0 +1,1 @@
+<h1>This is content for newsletter and discounts!</h1>
