@@ -4,6 +4,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/test', function(){
+   return view('test');
+});
 
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/about', [UserController::class, 'about'])->name('about');
