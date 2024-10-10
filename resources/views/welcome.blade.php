@@ -56,6 +56,13 @@
                 height: 10vh;
                 /* Full viewport height */
             }
+
+            /**Book with Us text**/
+            .bookwithus {
+                color: #ff0000;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+            }
         </style>
         <div class="container mt-5">
             <!--h2 class="text-center">Bootstrap Carousel with Overlay Caption</h2-->
@@ -103,9 +110,10 @@
             </div>
         </div>
     </div><br>
+    <h1 align="center" class="bookwithus">Book with Us</h1><br>
     <div class="bookingdate">
         <input type="date" class="custom-date-input" id="startdate" name="startdate">&nbsp;&nbsp;&nbsp;
         <input type="date" class="custom-date-input" id="enddate" name="enddate"> &nbsp;&nbsp;&nbsp;
-        <button type="submit">SEARCH</button>
+        <button type="submit" class="btn btn-danger">SEARCH</button>
     </div>
 </x-layout>
