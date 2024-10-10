@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function(){
-   return view('test');
+Route::get('/test', function () {
+    return view('test');
 });
 
 Route::get('/', [UserController::class, 'index'])->name('home');
@@ -19,4 +19,3 @@ Route::get('/contact', [UserController::class, 'contact'])->name('contact');
 Route::resource('contactform', ContactController::class);
 Route::post('/contactstore', [ContactController::class, 'store'])->name('contactform');
 Route::get('newsletteremail', [ContactController::class, 'newsletteremail'])->name('newsletter');
-

@@ -2,32 +2,35 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class UserController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('welcome');
     }
 
-    public function about(){
+    public function about()
+    {
         return view('about');
     }
 
-    public function rooms(){
+    public function rooms()
+    {
         return view('rooms');
     }
 
-    public function dine(){
+    public function dine()
+    {
         return view('dine');
     }
 
-    public function meeting(){
+    public function meeting()
+    {
         return view('meeting');
     }
 
-    public function contact(){
+    public function contact()
+    {
         return view('contact');
     }
-
 }

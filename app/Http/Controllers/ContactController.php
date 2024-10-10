@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Contact;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
-use Illuminate\Support\Facades\Mail;
 use App\Mail\Newsletter;
+use App\Models\Contact;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 class ContactController extends Controller
-{ 
+{
     //Route name: contactform
     public function index()
     {
         $cforms = Contact::all();
-        return view('contacts.index',['cforms' => $cforms]);
+
+        return view('contacts.index', ['cforms' => $cforms]);
     }
 
     /**
@@ -29,14 +29,15 @@ class ContactController extends Controller
     //Route name: contactform
     public function store(Request $request)
     {
-        
+
         $fields = $request->validate([
             'fullname' => ['required'],
             'email' => ['required'],
-            'mobileno' => ['required','max:11'],
-            'comment' => ['required']
+            'mobileno' => ['required', 'max:11'],
+            'comment' => ['required'],
         ]);
         Contact::create($fields);
+
         //Redirect back to contact page
         return back()->with('message', 'Your inquiry or comment was sent');
     }
@@ -72,10 +73,13 @@ class ContactController extends Controller
     {
         //
     }
+
     //Route name: newsletter
-    public function newsletteremail(){
+    public function newsletteremail()
+    {
         $cforms = Contact::all('email');
-        Mail::to($cforms)->send(new Newsletter());
+        Mail::to($cforms)->send(new Newsletter);
+
         return back()->with('message', 'Newsletter sent to all!');
     }
 }
