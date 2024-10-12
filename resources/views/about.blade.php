@@ -1,42 +1,34 @@
 <x-layout>
-    <style>
-        .my-image {
-            max-width: 100%;
-            /* Ensures the image doesn't exceed the container */
-            height: auto;
-            /* Maintains the aspect ratio */
-            border: 2px solid #007bff;
-            /* Optional: Add a border */
-            border-radius: 10px;
-            /* Optional: Add rounded corners */
-        }
-    </style>
-    <h1>About Tranquila Hotel</h1>
-    <div class="col-md-9">
-        <img src="{{ asset('images/aboutus.jpg') }}" class="card-img-top" height="480vh" alt="">
-    </div>
-    <div class="col-md-9 w-10">
-        <p>
-            At Tranquila Hotel, we believe that true relaxation and luxury come from a perfect blend of comfort,
-            nature,
-            and world-class service. Nestled in a serene location surrounded by lush greenery, our hotel offers
-            an oasis
-            of calm away from the hustle and bustle of city life. Designed with a focus on elegance and modern
-            comfort,
-            Tranquila Hotel features spacious rooms, soothing decor, and all the amenities you need for a
-            peaceful and
-            rejuvenating stay. Whether you're here for a weekend getaway or an extended retreat, we are
-            committed to
-            providing a tranquil experience that nourishes both body and mind.
-            <br><br>
-            Our dedicated staff is passionate about hospitality, striving to create a warm and welcoming
-            atmosphere for
-            every guest. From our luxurious spa services to the carefully curated dining options, everything at
-            Tranquila Hotel is designed to cater to your relaxation and well-being. Whether you're exploring the
-            surrounding natural beauty or unwinding in our relaxing lounge areas, we aim to make your stay an
-            unforgettable escape. At Tranquila Hotel, your comfort and satisfaction are our top priorities, and
-            we look
-            forward to making your visit a memorable one.
-        </p>
+    <div class="min-vh-100 bg-secondary d-flex">
+        <div class="mx-auto bg-white d-flex">
+            <div class="col-md">
+                <div class="container bg-primary">
+                    <h1 class="fw-light fst italic">About Tranquila Hotel</h1>
+                    <img src="{{ asset('images/aboutus.jpg') }}" class="image-fluid" alt="">
+                </div>
+                <div class="container bg-danger">
+                    <br>
+                    <p class=" fs-4 fw-light fst normal">
+                        Welcome to Tranquila, your serene escape nestled in the heart of nature. At Tranquila, we
+                        believe in
+                        creating an experience that combines luxury with tranquility, offering our guests a peaceful
+                        retreat
+                        from the hustle and bustle of daily life. Our boutique hotel is surrounded by lush landscapes,
+                        ensuring that every window offers a view worth waking up to. Whether you’re relaxing in one of
+                        our
+                        elegantly designed rooms or enjoying a meal at our gourmet restaurant, our goal is to provide a
+                        calm, rejuvenating environment where you can unwind and reconnect with yourself.<br><br>
+                        At Tranquila, exceptional service is at the core of everything we do. From the moment you step
+                        through our doors, our dedicated team is here to cater to your every need, ensuring that your
+                        stay
+                        is as comfortable and enjoyable as possible. Whether you're here for a romantic getaway, a
+                        family
+                        vacation, or a personal retreat, we offer personalized services tailored to your desires. With a
+                        commitment to sustainability and an emphasis on local culture, we invite you to experience the
+                        perfect balance of comfort and authenticity at Tranquila Hotel.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </x-layout>
