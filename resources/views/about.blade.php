@@ -3,7 +3,7 @@
         <div class="mx-auto bg-white d-flex">
             <div class="col-md">
                 <div class="container bg-primary">
-                    <h1 class="fw-light fst italic">About Tranquila Hotel</h1>
+                    <h1 class="fs-1 fw-light fst italic">About Tranquila Hotel</h1>
                     <img src="{{ asset('images/aboutus.jpg') }}" class="image-fluid" alt="">
                 </div>
                 <div class="container bg-danger">
