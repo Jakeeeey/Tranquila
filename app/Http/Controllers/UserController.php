@@ -33,4 +33,9 @@ class UserController extends Controller
     {
         return view('contact');
     }
+    
+    public function bookroom()
+    {
+        return view('book-room');
+    }
 }
