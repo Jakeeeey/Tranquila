@@ -17,7 +17,9 @@ Route::get('/meeting', [UserController::class, 'meeting'])->name('meeting');
 Route::get('/contact', [UserController::class, 'contact'])->name('contact');
 Route::get('/bookroom', [UserController::class, 'bookroom'])->name('bookroom');
 
+//Hotel Room routes
 Route::post('/search-rooms', [HomeController::class, 'searchRooms'])->name('search.rooms');
+
 
 //Contact Form routes
 Route::resource('contactform', ContactController::class);

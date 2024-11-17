@@ -1,16 +1,17 @@
 <?php
 
+// database/seeders/DatabaseSeeder.php
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         $this->call([
-            RoomSeeder::class,
-            BookingSeeder::class, // Run BookingSeeder after RoomSeeder
+            //KTVRoomSeeder::class, // Ensure this line is present
         ]);
     }
 }
+
