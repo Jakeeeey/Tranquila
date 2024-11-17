@@ -33,7 +33,7 @@ class UserController extends Controller
     {
         return view('contact');
     }
-    
+    //to display available rooms
     public function bookroom()
     {
         return view('book-room');

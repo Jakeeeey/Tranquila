@@ -6,6 +6,7 @@ use App\Models\Room;
 
 class HomeController extends Controller
 {
+    //Search Available Rooms
     public function searchRooms(Request $request){
     $checkin = $request->input('checkin');
     $checkout = $request->input('checkout');
