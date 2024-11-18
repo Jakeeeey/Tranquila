@@ -9,9 +9,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $this->call([
-            //KTVRoomSeeder::class, // Ensure this line is present
-        ]);
+        // Call the RoomKTVSeeder to seed data for the roomktv table
+        $this->call(RoomKTVSeeder::class); 
     }
 }
-

@@ -19,8 +19,10 @@ Route::get('/bookroom', [UserController::class, 'bookroom'])->name('bookroom');
 
 //Hotel Room routes
 Route::post('/search-rooms', [HomeController::class, 'searchRooms'])->name('search.rooms');
-
-
+//KTV routes 
+Route::get('/date-picker', [HomeController::class, 'showDatePicker'])->name('booking.date-picker');
+Route::post('/available-rooms', [HomeController::class, 'showAvailableRooms'])->name('booking.available-rooms');
+Route::post('/book-room/{room}', [HomeController::class, 'bookRoom'])->name('booking.book-room');
 //Contact Form routes
 Route::resource('contactform', ContactController::class);
 Route::post('/contactstore', [ContactController::class, 'store'])->name('contactform');
